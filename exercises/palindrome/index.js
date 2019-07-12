@@ -7,7 +7,10 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
+// const str = "fishhsif"
+
 function palindrome(str) {
+  // console.log(str)
   const reversedStr = str.split('').reverse().join('')
   if (str === reversedStr) {
     return true
