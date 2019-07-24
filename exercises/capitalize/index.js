@@ -7,6 +7,18 @@
 //   capitalize('a lazy fox') --> 'A Lazy Fox'
 //   capitalize('look, it is working!') --> 'Look, It Is Working!'
 
-function capitalize(str) {}
+function capitalize(str) {
+  //create the empty array I will return
+
+  const words = []
+  // we need to split the string by spaces because there are spaces
+  //between the words and we want to grab the first one
+  for (let word of str.split(' ')) {
+  // word[0] is the first letter of each split word in the sentence
+    console.log(word[0])
+    words.push(word[0].toUpperCase() + word.slice(1))
+  }
+  return words.join(' ')
+}
 
 module.exports = capitalize;
