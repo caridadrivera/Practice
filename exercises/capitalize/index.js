@@ -15,8 +15,10 @@ function capitalize(str) {
   //between the words and we want to grab the first one
   for (let word of str.split(' ')) {
   // word[0] is the first letter of each split word in the sentence
-    console.log(word[0])
+    console.log( word.slice(1))
     words.push(word[0].toUpperCase() + word.slice(1))
+    //user slice(1) to remove the first word of the letter, which will give me
+    //the second word of the letter and add it to the first word
   }
   return words.join(' ')
 }
