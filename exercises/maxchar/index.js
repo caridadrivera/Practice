@@ -28,13 +28,14 @@ function maxChar(str) {
 
   //after building the character map, I want to iterate over my object (for in es6 for loop)
   for(let char in charMap) {
+    console.log(charMap[char])
     if (charMap[char] > max) {
       max = charMap[char];
       maxChar = char;
     }
 
   }
-   return maxChar
+   // return maxChar
   // console.log(maxChar)
 }
 
