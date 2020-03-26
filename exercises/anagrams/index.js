@@ -14,6 +14,7 @@ function anagrams(stringA, stringB) {
 const charMapA = charMap(stringA);
 const charMapB = charMap(stringB);
 
+
 //first I want to check to make sure that the keys inside of my character objects are the same lengths
 if (Object.keys(charMapA).length !== Object.keys(charMapB).length) {
   return false
