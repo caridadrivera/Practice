@@ -8,6 +8,10 @@
 //   vowels('Why?') --> 0
 
 function vowels(str) {
+ const vowels = [a, e, i, o, u]
+ for(let word of str){
+   console.log(word)
+ }
   
 }
 
